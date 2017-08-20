@@ -1,10 +1,6 @@
 <?
 $url = 'http://destination.host/path';
-
-
 $xml = file_get_contents('php://input');
-
-$myvars = $xml;
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
